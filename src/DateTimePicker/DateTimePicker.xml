@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="DateTimePicker.widget.DateTimePicker" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ widget.xsd">
+    <name>DateTimePicker</name>
+    <description>A datetime picker</description>
+    <icon></icon>
+    <properties>
+        <property key="dateAttribute" type="attribute" required="true"> 
+            <caption>Attribute</caption>
+            <category>General</category>
+            <description>Add the attribute the content should be saved to.</description>
+            <attributeTypes>
+                <attributeType name="DateTime"/>
+            </attributeTypes>
+        </property>       
+
+         <property key="dateFormat" type="string" defaultValue="DD-MM-YYYY HH:mm"> 
+            <caption>Format</caption>
+            <category>General</category>
+            <description>The format to display the datetime in. See moment.js documentation.</description>
+        </property>  
+
+        <property key="showTodayButton" type="boolean" defaultValue="false"> 
+            <caption>Today button</caption>
+            <category>General</category>
+            <description>Show the today button.</description>
+        </property>        
+
+        <property key="showCloseButton" type="boolean" defaultValue="false"> 
+            <caption>Close button</caption>
+            <category>General</category>
+            <description>Show a close button.</description>
+        </property>
+
+        <property key="showClearButton" type="boolean" defaultValue="false"> 
+            <caption>Clear button</caption>
+            <category>General</category>
+            <description>Show a clear button.</description>
+        </property>
+
+        <property key="inline" type="boolean" defaultValue="false"> 
+            <caption>Show inline</caption>
+            <category>General</category>
+            <description>Display the calendar inline, without an input field.</description>
+        </property>        
+
+        <property key="sidebyside" type="boolean" defaultValue="false"> 
+            <caption>Side by side</caption>
+            <category>General</category>
+            <description>Display date and time side by side</description>
+        </property>
+
+        <property key="minuteStepping" type="integer" defaultValue="1"> 
+            <caption>Steps</caption>
+            <category>General</category>
+            <description>Number of minutes to step with the time picker.</description>
+        </property>
+
+
+    </properties>
+</widget>
